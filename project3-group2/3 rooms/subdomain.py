@@ -57,7 +57,7 @@ def calculate_gammas(subdomain):
     elif subdomain.id==2:
         gamma_1[left_col[:half]] = 1
         gamma_N[left_col[half:]] = 1
-        gamma_N[right_col[:half]] = 1
+        gamma_N[right_col[:half+1]] = 1
         gamma_2[right_col[half+1:]] = 1
         if ny%2==1:
             gamma_2[right_col[half]] = 0
